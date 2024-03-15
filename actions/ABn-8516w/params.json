@@ -1,0 +1,23 @@
+{
+    "category": "plugins",
+    "display": "Unix to Date",
+    "fields": {
+        "ABo": {
+            "caption": "unix timestamp",
+            "doc": "The Unix timestamp number",
+            "editor": "DynamicValue",
+            "name": "timestamp",
+            "rank": 0,
+            "value": "text"
+        }
+    },
+    "return_value": {
+        "ABp": {
+            "caption": "date",
+            "name": "date",
+            "rank": 0,
+            "value": "date"
+        }
+    },
+    "type": "server_side"
+}

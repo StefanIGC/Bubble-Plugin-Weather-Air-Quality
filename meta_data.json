@@ -1,0 +1,14 @@
+{
+    "categories": {
+        "0": "data (things)",
+        "1": "location"
+    },
+    "demo_page": "http://weatherforecast-49315.bubbleapps.io/version-test/weatherio",
+    "description": "Elevate your Bubble.io applications with the ultimate environmental awareness tool. The \"Weather & Air Quality\" plugin seamlessly integrates comprehensive weather forecasts and real-time air quality data into your projects, empowering users with actionable insights right at their fingertips.\n\nPlease visit: documentation.md for more information about the plugin.\n\nIt is still in development, but if you like it you can give 5 stars :)))\n",
+    "image": "//meta-q.cdn.bubble.io/f1708863636889x252694700878339100/logo.webp",
+    "license": "open_source",
+    "link": "documentation.md",
+    "name": "Weather & Air Quality",
+    "plugin_instructions": "Bring weather data into your app with these easy steps. We included all details so nothing would be open to interpretation. Enjoy!\n\n1. Download this plugin \n\n2. Go to openweathermap.com to create an account and generate your API key. May need to verify your email before API key will work. This may take 10 minutes or so. \n\n3. Copy and paste API key into Bubble by finding the \"OpenWeather\" plug in under your \"Plugins\" tab on the left side of your screen.\n\n4. Create a group with type OpenWeather [api call] and data source as OpenWeather [api call] - please note that [api call] in this step means either OpenWeather Lat & Long or OpenWeather Zip - whichever works better for your use case. \n\n5. Create text within Group from Step 4. Make this text dynamic, and set it to parent group's [Lat & long OR Zip] (OpenWeather) THEN click what you want to display - this could be any aspect of the weather. \n\n6. Click Preview in the top right, then see your work!\n\n7. Rate 5 stars if you found this plugin useful! Thank you.\n",
+    "sa_node_version": 18
+}

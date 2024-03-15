@@ -1,0 +1,465 @@
+{
+    "auth": "private_key_url",
+    "calls": {
+        "AAC": {
+            "doc_link": "https://openweathermap.org/current",
+            "initialized": true,
+            "method": "get",
+            "name": "Current Weather Data | data",
+            "publish_as": "data",
+            "rank": 0,
+            "ret_value": "api.1706732293463x609718201301860400.plugin_api.AAC",
+            "should_reinitialize": false,
+            "types": "{\"plugin_api.AAC\":{\"caption\":\"Current Weather Data | data\",\"fields\":{\"_p_coord.lon\":{\"ret_value\":\"number\",\"caption\":\"coord lon\",\"sample_value\":37.7808,\"path\":[\"coord\",\"lon\"]},\"_p_coord.lat\":{\"ret_value\":\"number\",\"caption\":\"coord lat\",\"sample_value\":37.7808,\"path\":[\"coord\",\"lat\"]},\"_p_weather\":{\"ret_value\":\"list.api.1706732293463x609718201301860400.plugin_api.AAC.weather\",\"caption\":\"weather\",\"path\":[\"weather\"]},\"_p_base\":{\"ret_value\":\"text\",\"caption\":\"base\",\"sample_value\":\"stations\",\"path\":[\"base\"]},\"_p_main.temp\":{\"ret_value\":\"number\",\"caption\":\"main temp\",\"sample_value\":-0.97,\"path\":[\"main\",\"temp\"]},\"_p_main.feels_like\":{\"ret_value\":\"number\",\"caption\":\"main feels_like\",\"sample_value\":-0.97,\"path\":[\"main\",\"feels_like\"]},\"_p_main.temp_min\":{\"ret_value\":\"number\",\"caption\":\"main temp_min\",\"sample_value\":-0.97,\"path\":[\"main\",\"temp_min\"]},\"_p_main.temp_max\":{\"ret_value\":\"number\",\"caption\":\"main temp_max\",\"sample_value\":-0.97,\"path\":[\"main\",\"temp_max\"]},\"_p_main.pressure\":{\"ret_value\":\"number\",\"caption\":\"main pressure\",\"sample_value\":1024,\"path\":[\"main\",\"pressure\"]},\"_p_main.humidity\":{\"ret_value\":\"number\",\"caption\":\"main humidity\",\"sample_value\":76,\"path\":[\"main\",\"humidity\"]},\"_p_main.sea_level\":{\"ret_value\":\"number\",\"caption\":\"main sea_level\",\"sample_value\":1024,\"path\":[\"main\",\"sea_level\"]},\"_p_main.grnd_level\":{\"ret_value\":\"number\",\"caption\":\"main grnd_level\",\"sample_value\":859,\"path\":[\"main\",\"grnd_level\"]},\"_p_visibility\":{\"ret_value\":\"number\",\"caption\":\"visibility\",\"sample_value\":10000,\"path\":[\"visibility\"]},\"_p_wind.speed\":{\"ret_value\":\"number\",\"caption\":\"wind speed\",\"sample_value\":1.08,\"path\":[\"wind\",\"speed\"]},\"_p_wind.deg\":{\"ret_value\":\"number\",\"caption\":\"wind deg\",\"sample_value\":74,\"path\":[\"wind\",\"deg\"]},\"_p_wind.gust\":{\"ret_value\":\"number\",\"caption\":\"wind gust\",\"sample_value\":1.17,\"path\":[\"wind\",\"gust\"]},\"_p_snow.1h\":{\"ret_value\":\"number\",\"caption\":\"snow 1h\",\"sample_value\":0.49,\"path\":[\"snow\",\"1h\"]},\"_p_clouds.all\":{\"ret_value\":\"number\",\"caption\":\"clouds all\",\"sample_value\":100,\"path\":[\"clouds\",\"all\"]},\"_p_dt\":{\"ret_value\":\"number\",\"caption\":\"dt\",\"sample_value\":1706987348,\"path\":[\"dt\"]},\"_p_sys.country\":{\"ret_value\":\"text\",\"caption\":\"sys country\",\"sample_value\":\"TR\",\"path\":[\"sys\",\"country\"]},\"_p_sys.sunrise\":{\"ret_value\":\"number\",\"caption\":\"sys sunrise\",\"sample_value\":1706934715,\"path\":[\"sys\",\"sunrise\"]},\"_p_sys.sunset\":{\"ret_value\":\"number\",\"caption\":\"sys sunset\",\"sample_value\":1706971994,\"path\":[\"sys\",\"sunset\"]},\"_p_timezone\":{\"ret_value\":\"number\",\"caption\":\"timezone\",\"sample_value\":10800,\"path\":[\"timezone\"]},\"_p_id\":{\"ret_value\":\"text\",\"caption\":\"id\",\"sample_value\":298728,\"path\":[\"id\"]},\"_p_name\":{\"ret_value\":\"text\",\"caption\":\"name\",\"sample_value\":\"Tut\",\"path\":[\"name\"]},\"_p_cod\":{\"ret_value\":\"number\",\"caption\":\"cod\",\"sample_value\":200,\"path\":[\"cod\"]}}},\"plugin_api.AAC.weather\":{\"caption\":\"Current Weather Data | data weather\",\"fields\":{\"_p_id\":{\"ret_value\":\"text\",\"caption\":\"id\",\"sample_value\":600,\"path\":[\"id\"]},\"_p_main\":{\"ret_value\":\"text\",\"caption\":\"main\",\"sample_value\":\"Snow\",\"path\":[\"main\"]},\"_p_description\":{\"ret_value\":\"text\",\"caption\":\"description\",\"sample_value\":\"light snow\",\"path\":[\"description\"]},\"_p_icon\":{\"ret_value\":\"text\",\"caption\":\"icon\",\"sample_value\":\"13n\",\"path\":[\"icon\"]}}}}",
+            "url": "https://api.openweathermap.org/data/2.5/weather?lat=[lat]&lon=[lon]&appid=[API key]&units=[units]&lang=[lang]",
+            "url_params": {
+                "AAD": {
+                    "doc": "Latitude",
+                    "key": "lat",
+                    "private": true,
+                    "value": "37.780830"
+                },
+                "AAE": {
+                    "doc": "Longitude",
+                    "key": "lon",
+                    "private": true,
+                    "value": "37.780830"
+                },
+                "AAF": {
+                    "doc": "Unique API key from OpenWeatheMap.",
+                    "key": "API key",
+                    "private": true,
+                    "value": "a263f7c1f1071221f11c586d84bb6fab"
+                },
+                "AAG": {
+                    "doc": "Units of measurement: standard, metric, imperial.",
+                    "key": "units",
+                    "private": true,
+                    "value": "metric"
+                },
+                "AAH": {
+                    "doc": "Country lang code: \"ro\", \"en\"..",
+                    "key": "lang",
+                    "private": true,
+                    "value": "en"
+                }
+            }
+        },
+        "AAI": {
+            "doc_link": "https://openweathermap.org/forecast5",
+            "initialized": true,
+            "method": "get",
+            "name": "Call 5 day / 3 hour forecast data | data",
+            "publish_as": "data",
+            "rank": 1,
+            "ret_value": "api.1706732293463x609718201301860400.plugin_api.AAI",
+            "should_reinitialize": true,
+            "types": "{\"plugin_api.AAI\":{\"caption\":\"Call 5 day / 3 hour forecast data | data\",\"fields\":{\"_p_cod\":{\"ret_value\":\"text\",\"caption\":\"cod\",\"sample_value\":\"200\",\"path\":[\"cod\"]},\"_p_message\":{\"ret_value\":\"number\",\"caption\":\"message\",\"sample_value\":0,\"path\":[\"message\"]},\"_p_cnt\":{\"ret_value\":\"number\",\"caption\":\"cnt\",\"sample_value\":40,\"path\":[\"cnt\"]},\"_p_list\":{\"ret_value\":\"list.api.1706732293463x609718201301860400.plugin_api.AAI.list\",\"caption\":\"list\",\"path\":[\"list\"]},\"_p_city.id\":{\"ret_value\":\"number\",\"caption\":\"city id\",\"sample_value\":618426,\"path\":[\"city\",\"id\"]},\"_p_city.name\":{\"ret_value\":\"text\",\"caption\":\"city name\",\"sample_value\":\"Chișinău\",\"path\":[\"city\",\"name\"]},\"_p_city.coord.lat\":{\"ret_value\":\"number\",\"caption\":\"city coord lat\",\"sample_value\":47.0105,\"path\":[\"city\",\"coord\",\"lat\"]},\"_p_city.coord.lon\":{\"ret_value\":\"number\",\"caption\":\"city coord lon\",\"sample_value\":28.8638,\"path\":[\"city\",\"coord\",\"lon\"]},\"_p_city.country\":{\"ret_value\":\"text\",\"caption\":\"city country\",\"sample_value\":\"MD\",\"path\":[\"city\",\"country\"]},\"_p_city.population\":{\"ret_value\":\"number\",\"caption\":\"city population\",\"sample_value\":635994,\"path\":[\"city\",\"population\"]},\"_p_city.timezone\":{\"ret_value\":\"number\",\"caption\":\"city timezone\",\"sample_value\":7200,\"path\":[\"city\",\"timezone\"]},\"_p_city.sunrise\":{\"ret_value\":\"number\",\"caption\":\"city sunrise\",\"sample_value\":1706679106,\"path\":[\"city\",\"sunrise\"]},\"_p_city.sunset\":{\"ret_value\":\"number\",\"caption\":\"city sunset\",\"sample_value\":1706713430,\"path\":[\"city\",\"sunset\"]}}},\"plugin_api.AAI.list\":{\"caption\":\"Call 5 day / 3 hour forecast data | data list\",\"fields\":{\"_p_dt\":{\"ret_value\":\"number\",\"caption\":\"dt\",\"sample_value\":1706745600,\"path\":[\"dt\"]},\"_p_main.temp\":{\"ret_value\":\"number\",\"caption\":\"main temp\",\"sample_value\":-0.83,\"path\":[\"main\",\"temp\"]},\"_p_main.feels_like\":{\"ret_value\":\"number\",\"caption\":\"main feels_like\",\"sample_value\":-2.88,\"path\":[\"main\",\"feels_like\"]},\"_p_main.temp_min\":{\"ret_value\":\"number\",\"caption\":\"main temp_min\",\"sample_value\":-0.83,\"path\":[\"main\",\"temp_min\"]},\"_p_main.temp_max\":{\"ret_value\":\"number\",\"caption\":\"main temp_max\",\"sample_value\":0.7,\"path\":[\"main\",\"temp_max\"]},\"_p_main.pressure\":{\"ret_value\":\"number\",\"caption\":\"main pressure\",\"sample_value\":1029,\"path\":[\"main\",\"pressure\"]},\"_p_main.sea_level\":{\"ret_value\":\"number\",\"caption\":\"main sea_level\",\"sample_value\":1029,\"path\":[\"main\",\"sea_level\"]},\"_p_main.grnd_level\":{\"ret_value\":\"number\",\"caption\":\"main grnd_level\",\"sample_value\":1025,\"path\":[\"main\",\"grnd_level\"]},\"_p_main.humidity\":{\"ret_value\":\"number\",\"caption\":\"main humidity\",\"sample_value\":84,\"path\":[\"main\",\"humidity\"]},\"_p_main.temp_kf\":{\"ret_value\":\"number\",\"caption\":\"main temp_kf\",\"sample_value\":-1.53,\"path\":[\"main\",\"temp_kf\"]},\"_p_weather\":{\"ret_value\":\"list.api.1706732293463x609718201301860400.plugin_api.AAI.weather\",\"caption\":\"weather\",\"path\":[\"weather\"]},\"_p_clouds.all\":{\"ret_value\":\"number\",\"caption\":\"clouds all\",\"sample_value\":19,\"path\":[\"clouds\",\"all\"]},\"_p_wind.speed\":{\"ret_value\":\"number\",\"caption\":\"wind speed\",\"sample_value\":1.61,\"path\":[\"wind\",\"speed\"]},\"_p_wind.deg\":{\"ret_value\":\"number\",\"caption\":\"wind deg\",\"sample_value\":247,\"path\":[\"wind\",\"deg\"]},\"_p_wind.gust\":{\"ret_value\":\"number\",\"caption\":\"wind gust\",\"sample_value\":1.54,\"path\":[\"wind\",\"gust\"]},\"_p_visibility\":{\"ret_value\":\"number\",\"caption\":\"visibility\",\"sample_value\":10000,\"path\":[\"visibility\"]},\"_p_pop\":{\"ret_value\":\"number\",\"caption\":\"pop\",\"sample_value\":0,\"path\":[\"pop\"]},\"_p_sys.pod\":{\"ret_value\":\"text\",\"caption\":\"sys pod\",\"sample_value\":\"n\",\"path\":[\"sys\",\"pod\"]},\"_p_dt_txt\":{\"ret_value\":\"text\",\"caption\":\"dt_txt\",\"sample_value\":\"2024-02-01 00:00:00\",\"path\":[\"dt_txt\"]},\"_p_rain.3h\":{\"ret_value\":\"number\",\"caption\":\"rain 3h\",\"sample_value\":0.19,\"path\":[\"rain\",\"3h\"]}}},\"plugin_api.AAI.weather\":{\"caption\":\"Call 5 day / 3 hour forecast data | data weather\",\"fields\":{\"_p_id\":{\"ret_value\":\"text\",\"caption\":\"id\",\"sample_value\":801,\"path\":[\"id\"]},\"_p_main\":{\"ret_value\":\"text\",\"caption\":\"main\",\"sample_value\":\"Clouds\",\"path\":[\"main\"]},\"_p_description\":{\"ret_value\":\"text\",\"caption\":\"description\",\"sample_value\":\"few clouds\",\"path\":[\"description\"]},\"_p_icon\":{\"ret_value\":\"text\",\"caption\":\"icon\",\"sample_value\":\"02n\",\"path\":[\"icon\"]}}}}",
+            "url": "https://api.openweathermap.org/data/2.5/forecast?lat=[lat]&lon=[lon]&appid=[API key]&cnt=[cnt]&units=[units]&lang=[lang]",
+            "url_params": {
+                "AAJ": {
+                    "doc": "Latitude",
+                    "key": "lat",
+                    "private": true,
+                    "value": "47.0105"
+                },
+                "AAK": {
+                    "doc": "Longitude",
+                    "key": "lon",
+                    "private": true,
+                    "value": "28.8638"
+                },
+                "AAL": {
+                    "doc": "Unique API key from OpenWeatherMap.",
+                    "key": "API key",
+                    "private": true,
+                    "value": "a263f7c1f1071221f11c586d84bb6fab"
+                },
+                "AAM": {
+                    "doc": "A number of timestamps, which will be returned in the API response.",
+                    "key": "cnt",
+                    "private": true,
+                    "value": "100000"
+                },
+                "AAN": {
+                    "doc": "Units of measurement: standard, metric, imperial.",
+                    "key": "units",
+                    "private": true,
+                    "value": "metric"
+                },
+                "AAO": {
+                    "doc": "Country lang code: \"ro\", \"en\"..",
+                    "key": "lang",
+                    "private": true,
+                    "value": "en"
+                }
+            }
+        },
+        "AAP": {
+            "doc_link": "https://openweathermap.org/current",
+            "initialized": true,
+            "method": "get",
+            "name": "Current Weather Data | action",
+            "publish_as": "action",
+            "rank": 2,
+            "ret_value": "api.1706732293463x609718201301860400.plugin_api.AAP",
+            "should_reinitialize": true,
+            "types": "{\"plugin_api.AAP\":{\"caption\":\"Current Weather Data | action\",\"fields\":{\"_p_coord.lon\":{\"ret_value\":\"number\",\"caption\":\"coord lon\",\"sample_value\":37.7808,\"path\":[\"coord\",\"lon\"]},\"_p_coord.lat\":{\"ret_value\":\"number\",\"caption\":\"coord lat\",\"sample_value\":37.7808,\"path\":[\"coord\",\"lat\"]},\"_p_weather\":{\"ret_value\":\"list.api.1706732293463x609718201301860400.plugin_api.AAP.weather\",\"caption\":\"weather\",\"path\":[\"weather\"]},\"_p_base\":{\"ret_value\":\"text\",\"caption\":\"base\",\"sample_value\":\"stations\",\"path\":[\"base\"]},\"_p_main.temp\":{\"ret_value\":\"number\",\"caption\":\"main temp\",\"sample_value\":-3.75,\"path\":[\"main\",\"temp\"]},\"_p_main.feels_like\":{\"ret_value\":\"number\",\"caption\":\"main feels_like\",\"sample_value\":-7.08,\"path\":[\"main\",\"feels_like\"]},\"_p_main.temp_min\":{\"ret_value\":\"number\",\"caption\":\"main temp_min\",\"sample_value\":-3.75,\"path\":[\"main\",\"temp_min\"]},\"_p_main.temp_max\":{\"ret_value\":\"number\",\"caption\":\"main temp_max\",\"sample_value\":-3.75,\"path\":[\"main\",\"temp_max\"]},\"_p_main.pressure\":{\"ret_value\":\"number\",\"caption\":\"main pressure\",\"sample_value\":1025,\"path\":[\"main\",\"pressure\"]},\"_p_main.humidity\":{\"ret_value\":\"number\",\"caption\":\"main humidity\",\"sample_value\":73,\"path\":[\"main\",\"humidity\"]},\"_p_main.sea_level\":{\"ret_value\":\"number\",\"caption\":\"main sea_level\",\"sample_value\":1025,\"path\":[\"main\",\"sea_level\"]},\"_p_main.grnd_level\":{\"ret_value\":\"number\",\"caption\":\"main grnd_level\",\"sample_value\":858,\"path\":[\"main\",\"grnd_level\"]},\"_p_visibility\":{\"ret_value\":\"number\",\"caption\":\"visibility\",\"sample_value\":10000,\"path\":[\"visibility\"]},\"_p_wind.speed\":{\"ret_value\":\"number\",\"caption\":\"wind speed\",\"sample_value\":2.19,\"path\":[\"wind\",\"speed\"]},\"_p_wind.deg\":{\"ret_value\":\"number\",\"caption\":\"wind deg\",\"sample_value\":353,\"path\":[\"wind\",\"deg\"]},\"_p_wind.gust\":{\"ret_value\":\"number\",\"caption\":\"wind gust\",\"sample_value\":1.92,\"path\":[\"wind\",\"gust\"]},\"_p_clouds.all\":{\"ret_value\":\"number\",\"caption\":\"clouds all\",\"sample_value\":25,\"path\":[\"clouds\",\"all\"]},\"_p_dt\":{\"ret_value\":\"number\",\"caption\":\"dt\",\"sample_value\":1706733971,\"path\":[\"dt\"]},\"_p_sys.country\":{\"ret_value\":\"text\",\"caption\":\"sys country\",\"sample_value\":\"TR\",\"path\":[\"sys\",\"country\"]},\"_p_sys.sunrise\":{\"ret_value\":\"number\",\"caption\":\"sys sunrise\",\"sample_value\":1706675665,\"path\":[\"sys\",\"sunrise\"]},\"_p_sys.sunset\":{\"ret_value\":\"number\",\"caption\":\"sys sunset\",\"sample_value\":1706712591,\"path\":[\"sys\",\"sunset\"]},\"_p_timezone\":{\"ret_value\":\"number\",\"caption\":\"timezone\",\"sample_value\":10800,\"path\":[\"timezone\"]},\"_p_id\":{\"ret_value\":\"text\",\"caption\":\"id\",\"sample_value\":298728,\"path\":[\"id\"]},\"_p_name\":{\"ret_value\":\"text\",\"caption\":\"name\",\"sample_value\":\"Tut\",\"path\":[\"name\"]},\"_p_cod\":{\"ret_value\":\"number\",\"caption\":\"cod\",\"sample_value\":200,\"path\":[\"cod\"]}}},\"plugin_api.AAP.weather\":{\"caption\":\"Current Weather Data | action weather\",\"fields\":{\"_p_id\":{\"ret_value\":\"text\",\"caption\":\"id\",\"sample_value\":802,\"path\":[\"id\"]},\"_p_main\":{\"ret_value\":\"text\",\"caption\":\"main\",\"sample_value\":\"Clouds\",\"path\":[\"main\"]},\"_p_description\":{\"ret_value\":\"text\",\"caption\":\"description\",\"sample_value\":\"scattered clouds\",\"path\":[\"description\"]},\"_p_icon\":{\"ret_value\":\"text\",\"caption\":\"icon\",\"sample_value\":\"03n\",\"path\":[\"icon\"]}}}}",
+            "url": "https://api.openweathermap.org/data/2.5/weather?lat=[lat]&lon=[lon]&appid=[API key]&units=[units]&lang=[lang]",
+            "url_params": {
+                "AAQ": {
+                    "doc": "Latitude",
+                    "key": "lat",
+                    "private": true,
+                    "value": "37.780830"
+                },
+                "AAR": {
+                    "doc": "Longitude",
+                    "key": "lon",
+                    "private": true,
+                    "value": "37.780830"
+                },
+                "AAS": {
+                    "doc": "Unique API key from OpenWeatheMap.",
+                    "key": "API key",
+                    "private": true,
+                    "value": "a263f7c1f1071221f11c586d84bb6fab"
+                },
+                "AAT": {
+                    "doc": "Units of measurement: standard, metric, imperial.",
+                    "key": "units",
+                    "private": true,
+                    "value": "metric"
+                },
+                "AAU": {
+                    "doc": "Country lang code: \"ro\", \"en\"..",
+                    "key": "lang",
+                    "private": true,
+                    "value": "en"
+                }
+            }
+        },
+        "AAV": {
+            "doc_link": "https://openweathermap.org/forecast5",
+            "initialized": true,
+            "method": "get",
+            "name": "Call 5 day / 3 hour forecast data | action",
+            "publish_as": "action",
+            "rank": 3,
+            "ret_value": "api.1706732293463x609718201301860400.plugin_api.AAV",
+            "should_reinitialize": true,
+            "types": "{\"plugin_api.AAV\":{\"caption\":\"Call 5 day / 3 hour forecast data | action\",\"fields\":{\"_p_cod\":{\"ret_value\":\"text\",\"caption\":\"cod\",\"sample_value\":\"200\",\"path\":[\"cod\"]},\"_p_message\":{\"ret_value\":\"number\",\"caption\":\"message\",\"sample_value\":0,\"path\":[\"message\"]},\"_p_cnt\":{\"ret_value\":\"number\",\"caption\":\"cnt\",\"sample_value\":3,\"path\":[\"cnt\"]},\"_p_list\":{\"ret_value\":\"list.api.1706732293463x609718201301860400.plugin_api.AAV.list\",\"caption\":\"list\",\"path\":[\"list\"]},\"_p_city.id\":{\"ret_value\":\"number\",\"caption\":\"city id\",\"sample_value\":618426,\"path\":[\"city\",\"id\"]},\"_p_city.name\":{\"ret_value\":\"text\",\"caption\":\"city name\",\"sample_value\":\"Chișinău\",\"path\":[\"city\",\"name\"]},\"_p_city.coord.lat\":{\"ret_value\":\"number\",\"caption\":\"city coord lat\",\"sample_value\":47.0105,\"path\":[\"city\",\"coord\",\"lat\"]},\"_p_city.coord.lon\":{\"ret_value\":\"number\",\"caption\":\"city coord lon\",\"sample_value\":28.8638,\"path\":[\"city\",\"coord\",\"lon\"]},\"_p_city.country\":{\"ret_value\":\"text\",\"caption\":\"city country\",\"sample_value\":\"MD\",\"path\":[\"city\",\"country\"]},\"_p_city.population\":{\"ret_value\":\"number\",\"caption\":\"city population\",\"sample_value\":635994,\"path\":[\"city\",\"population\"]},\"_p_city.timezone\":{\"ret_value\":\"number\",\"caption\":\"city timezone\",\"sample_value\":7200,\"path\":[\"city\",\"timezone\"]},\"_p_city.sunrise\":{\"ret_value\":\"number\",\"caption\":\"city sunrise\",\"sample_value\":1706679106,\"path\":[\"city\",\"sunrise\"]},\"_p_city.sunset\":{\"ret_value\":\"number\",\"caption\":\"city sunset\",\"sample_value\":1706713430,\"path\":[\"city\",\"sunset\"]}}},\"plugin_api.AAV.list\":{\"caption\":\"Call 5 day / 3 hour forecast data | action list\",\"fields\":{\"_p_dt\":{\"ret_value\":\"number\",\"caption\":\"dt\",\"sample_value\":1706734800,\"path\":[\"dt\"]},\"_p_main.temp\":{\"ret_value\":\"number\",\"caption\":\"main temp\",\"sample_value\":-3.6,\"path\":[\"main\",\"temp\"]},\"_p_main.feels_like\":{\"ret_value\":\"number\",\"caption\":\"main feels_like\",\"sample_value\":-6.18,\"path\":[\"main\",\"feels_like\"]},\"_p_main.temp_min\":{\"ret_value\":\"number\",\"caption\":\"main temp_min\",\"sample_value\":-3.6,\"path\":[\"main\",\"temp_min\"]},\"_p_main.temp_max\":{\"ret_value\":\"number\",\"caption\":\"main temp_max\",\"sample_value\":1.07,\"path\":[\"main\",\"temp_max\"]},\"_p_main.pressure\":{\"ret_value\":\"number\",\"caption\":\"main pressure\",\"sample_value\":1030,\"path\":[\"main\",\"pressure\"]},\"_p_main.sea_level\":{\"ret_value\":\"number\",\"caption\":\"main sea_level\",\"sample_value\":1030,\"path\":[\"main\",\"sea_level\"]},\"_p_main.grnd_level\":{\"ret_value\":\"number\",\"caption\":\"main grnd_level\",\"sample_value\":1026,\"path\":[\"main\",\"grnd_level\"]},\"_p_main.humidity\":{\"ret_value\":\"number\",\"caption\":\"main humidity\",\"sample_value\":93,\"path\":[\"main\",\"humidity\"]},\"_p_main.temp_kf\":{\"ret_value\":\"number\",\"caption\":\"main temp_kf\",\"sample_value\":-4.67,\"path\":[\"main\",\"temp_kf\"]},\"_p_weather\":{\"ret_value\":\"list.api.1706732293463x609718201301860400.plugin_api.AAV.weather\",\"caption\":\"weather\",\"path\":[\"weather\"]},\"_p_clouds.all\":{\"ret_value\":\"number\",\"caption\":\"clouds all\",\"sample_value\":19,\"path\":[\"clouds\",\"all\"]},\"_p_wind.speed\":{\"ret_value\":\"number\",\"caption\":\"wind speed\",\"sample_value\":1.69,\"path\":[\"wind\",\"speed\"]},\"_p_wind.deg\":{\"ret_value\":\"number\",\"caption\":\"wind deg\",\"sample_value\":223,\"path\":[\"wind\",\"deg\"]},\"_p_wind.gust\":{\"ret_value\":\"number\",\"caption\":\"wind gust\",\"sample_value\":1.62,\"path\":[\"wind\",\"gust\"]},\"_p_visibility\":{\"ret_value\":\"number\",\"caption\":\"visibility\",\"sample_value\":10000,\"path\":[\"visibility\"]},\"_p_pop\":{\"ret_value\":\"number\",\"caption\":\"pop\",\"sample_value\":0,\"path\":[\"pop\"]},\"_p_sys.pod\":{\"ret_value\":\"text\",\"caption\":\"sys pod\",\"sample_value\":\"n\",\"path\":[\"sys\",\"pod\"]},\"_p_dt_txt\":{\"ret_value\":\"text\",\"caption\":\"dt_txt\",\"sample_value\":\"2024-01-31 21:00:00\",\"path\":[\"dt_txt\"]}}},\"plugin_api.AAV.weather\":{\"caption\":\"Call 5 day / 3 hour forecast data | action weather\",\"fields\":{\"_p_id\":{\"ret_value\":\"text\",\"caption\":\"id\",\"sample_value\":801,\"path\":[\"id\"]},\"_p_main\":{\"ret_value\":\"text\",\"caption\":\"main\",\"sample_value\":\"Clouds\",\"path\":[\"main\"]},\"_p_description\":{\"ret_value\":\"text\",\"caption\":\"description\",\"sample_value\":\"few clouds\",\"path\":[\"description\"]},\"_p_icon\":{\"ret_value\":\"text\",\"caption\":\"icon\",\"sample_value\":\"02n\",\"path\":[\"icon\"]}}}}",
+            "url": "https://api.openweathermap.org/data/2.5/forecast?lat=[lat]&lon=[lon]&appid=[API key]&cnt=[cnt]&units=[units]&lang=[lang]",
+            "url_params": {
+                "AAW": {
+                    "doc": "Latitude",
+                    "key": "lat",
+                    "private": true,
+                    "value": "47.0105"
+                },
+                "AAX": {
+                    "doc": "Longitude",
+                    "key": "lon",
+                    "private": true,
+                    "value": "28.8638"
+                },
+                "AAY": {
+                    "doc": "Unique API key from OpenWeatherMap.",
+                    "key": "API key",
+                    "private": true,
+                    "value": "a263f7c1f1071221f11c586d84bb6fab"
+                },
+                "AAZ": {
+                    "doc": "A number of timestamps, which will be returned in the API response.",
+                    "key": "cnt",
+                    "private": true,
+                    "value": "100"
+                },
+                "AAa": {
+                    "doc": "Units of measurement: standard, metric, imperial.",
+                    "key": "units",
+                    "private": true,
+                    "value": "metric"
+                },
+                "AAb": {
+                    "doc": "Country lang code: \"ro\", \"en\"..",
+                    "key": "lang",
+                    "private": true,
+                    "value": "en"
+                }
+            }
+        },
+        "AAc": {
+            "doc_link": "https://openweathermap.org/api/geocoding-api",
+            "initialized": true,
+            "method": "get",
+            "name": "Coordinates by location name | data",
+            "publish_as": "data",
+            "rank": 4,
+            "ret_value": "api.1706732293463x609718201301860400.plugin_api.AAc",
+            "should_reinitialize": true,
+            "types": "{\"plugin_api.AAc\":{\"caption\":\"Coordinates by location name | data\",\"fields\":{}}}",
+            "url": "http://api.openweathermap.org/geo/1.0/direct?q=[city_name]&limit=[limit]&appid=[API key]",
+            "url_params": {
+                "AAd": {
+                    "doc": "City name, state code (only for the US) or country code divided by comma. Please use ISO 3166 country codes.",
+                    "key": "city_name",
+                    "private": true,
+                    "value": "Iargara"
+                },
+                "AAe": {
+                    "doc": "Number of the locations in the API response (up to 5 results can be returned in the API response)",
+                    "key": "limit",
+                    "private": true,
+                    "value": "2"
+                },
+                "AAf": {
+                    "doc": "Unique API key from OpenWeatheMap.",
+                    "key": "API key",
+                    "private": true,
+                    "value": "a263f7c1f1071221f11c586d84bb6fab"
+                }
+            }
+        },
+        "AAg": {
+            "initialized": true,
+            "is_list": true,
+            "method": "get",
+            "name": "Coordinates by location name | action",
+            "publish_as": "action",
+            "rank": 5,
+            "ret_value": "api.1706732293463x609718201301860400.plugin_api.AAg",
+            "should_reinitialize": true,
+            "types": "{\"plugin_api.AAg\":{\"caption\":\"Coordinates by location name | action\",\"fields\":{\"_p_name\":{\"ret_value\":\"text\",\"caption\":\"name\",\"sample_value\":\"Cahul\",\"path\":[\"name\"]},\"_p_local_names.bg\":{\"ret_value\":\"text\",\"caption\":\"local_names bg\",\"sample_value\":\"Кахул\",\"path\":[\"local_names\",\"bg\"]},\"_p_local_names.uk\":{\"ret_value\":\"text\",\"caption\":\"local_names uk\",\"sample_value\":\"Каугул\",\"path\":[\"local_names\",\"uk\"]},\"_p_local_names.ro\":{\"ret_value\":\"text\",\"caption\":\"local_names ro\",\"sample_value\":\"Cahul\",\"path\":[\"local_names\",\"ro\"]},\"_p_local_names.ru\":{\"ret_value\":\"text\",\"caption\":\"local_names ru\",\"sample_value\":\"Кагул\",\"path\":[\"local_names\",\"ru\"]},\"_p_local_names.pl\":{\"ret_value\":\"text\",\"caption\":\"local_names pl\",\"sample_value\":\"Kaguł\",\"path\":[\"local_names\",\"pl\"]},\"_p_lat\":{\"ret_value\":\"number\",\"caption\":\"lat\",\"sample_value\":45.9044087,\"path\":[\"lat\"]},\"_p_lon\":{\"ret_value\":\"number\",\"caption\":\"lon\",\"sample_value\":28.1946583,\"path\":[\"lon\"]},\"_p_country\":{\"ret_value\":\"text\",\"caption\":\"country\",\"sample_value\":\"MD\",\"path\":[\"country\"]}}}}",
+            "url": "http://api.openweathermap.org/geo/1.0/direct?q=[city_name]&limit=[limit]&appid=[API key]",
+            "url_params": {
+                "AAh": {
+                    "doc": "City name, state code (only for the US) or country code divided by comma. Please use ISO 3166 country codes.",
+                    "key": "city_name",
+                    "private": true,
+                    "value": "MD"
+                },
+                "AAi": {
+                    "allow_blank": true,
+                    "doc": "Number of the locations in the API response (up to 5 results can be returned in the API response)",
+                    "key": "limit",
+                    "private": true,
+                    "value": "5"
+                },
+                "AAj": {
+                    "doc": "Unique API key from OpenWeatheMap.",
+                    "key": "API key",
+                    "private": true,
+                    "value": "a263f7c1f1071221f11c586d84bb6fab"
+                }
+            }
+        },
+        "AAk": {
+            "doc_link": "https://openweathermap.org/api/air-pollution",
+            "initialized": true,
+            "method": "get",
+            "name": "Current air pollution data | data",
+            "publish_as": "data",
+            "rank": 6,
+            "ret_value": "api.1706732293463x609718201301860400.plugin_api.AAk",
+            "should_reinitialize": true,
+            "types": "{\"plugin_api.AAk\":{\"caption\":\"Current air pollution data\",\"fields\":{\"_p_coord.lon\":{\"ret_value\":\"number\",\"caption\":\"coord lon\",\"sample_value\":28.8638,\"path\":[\"coord\",\"lon\"]},\"_p_coord.lat\":{\"ret_value\":\"number\",\"caption\":\"coord lat\",\"sample_value\":47.0105,\"path\":[\"coord\",\"lat\"]},\"_p_list\":{\"ret_value\":\"list.api.1706732293463x609718201301860400.plugin_api.AAk.list\",\"caption\":\"list\",\"path\":[\"list\"]}}},\"plugin_api.AAk.list\":{\"caption\":\"Current air pollution data list\",\"fields\":{\"_p_main.aqi\":{\"ret_value\":\"number\",\"caption\":\"main aqi\",\"sample_value\":2,\"path\":[\"main\",\"aqi\"]},\"_p_components.co\":{\"ret_value\":\"number\",\"caption\":\"components co\",\"sample_value\":380.52,\"path\":[\"components\",\"co\"]},\"_p_components.no\":{\"ret_value\":\"number\",\"caption\":\"components no\",\"sample_value\":0.01,\"path\":[\"components\",\"no\"]},\"_p_components.no2\":{\"ret_value\":\"number\",\"caption\":\"components no2\",\"sample_value\":11.48,\"path\":[\"components\",\"no2\"]},\"_p_components.o3\":{\"ret_value\":\"number\",\"caption\":\"components o3\",\"sample_value\":32.19,\"path\":[\"components\",\"o3\"]},\"_p_components.so2\":{\"ret_value\":\"number\",\"caption\":\"components so2\",\"sample_value\":3.76,\"path\":[\"components\",\"so2\"]},\"_p_components.pm2_5\":{\"ret_value\":\"number\",\"caption\":\"components pm2_5\",\"sample_value\":23.07,\"path\":[\"components\",\"pm2_5\"]},\"_p_components.pm10\":{\"ret_value\":\"number\",\"caption\":\"components pm10\",\"sample_value\":26.27,\"path\":[\"components\",\"pm10\"]},\"_p_components.nh3\":{\"ret_value\":\"number\",\"caption\":\"components nh3\",\"sample_value\":2.69,\"path\":[\"components\",\"nh3\"]},\"_p_dt\":{\"ret_value\":\"number\",\"caption\":\"dt\",\"sample_value\":1706735281,\"path\":[\"dt\"]}}}}",
+            "url": "http://api.openweathermap.org/data/2.5/air_pollution?lat=[lat]&lon=[lon]&appid=[API key]",
+            "url_params": {
+                "AAl": {
+                    "doc": "Latitude",
+                    "key": "lat",
+                    "private": true,
+                    "value": "47.0105"
+                },
+                "AAm": {
+                    "doc": "Longitude",
+                    "key": "lon",
+                    "private": true,
+                    "value": "28.8638"
+                },
+                "AAn": {
+                    "doc": "Unique API key from OpenWeatherMap.",
+                    "key": "API key",
+                    "private": true,
+                    "value": "a263f7c1f1071221f11c586d84bb6fab"
+                }
+            }
+        },
+        "AAo": {
+            "doc_link": "https://openweathermap.org/api/air-pollution",
+            "initialized": true,
+            "method": "get",
+            "name": "Current air pollution data | action",
+            "publish_as": "action",
+            "rank": 7,
+            "ret_value": "api.1706732293463x609718201301860400.plugin_api.AAo",
+            "should_reinitialize": true,
+            "types": "{\"plugin_api.AAo\":{\"caption\":\"Current air pollution data | action\",\"fields\":{\"_p_coord.lon\":{\"ret_value\":\"number\",\"caption\":\"coord lon\",\"sample_value\":28.8638,\"path\":[\"coord\",\"lon\"]},\"_p_coord.lat\":{\"ret_value\":\"number\",\"caption\":\"coord lat\",\"sample_value\":47.0105,\"path\":[\"coord\",\"lat\"]},\"_p_list\":{\"ret_value\":\"list.api.1706732293463x609718201301860400.plugin_api.AAo.list\",\"caption\":\"list\",\"path\":[\"list\"]}}},\"plugin_api.AAo.list\":{\"caption\":\"Current air pollution data | action list\",\"fields\":{\"_p_main.aqi\":{\"ret_value\":\"number\",\"caption\":\"main aqi\",\"sample_value\":2,\"path\":[\"main\",\"aqi\"]},\"_p_components.co\":{\"ret_value\":\"number\",\"caption\":\"components co\",\"sample_value\":380.52,\"path\":[\"components\",\"co\"]},\"_p_components.no\":{\"ret_value\":\"number\",\"caption\":\"components no\",\"sample_value\":0.01,\"path\":[\"components\",\"no\"]},\"_p_components.no2\":{\"ret_value\":\"number\",\"caption\":\"components no2\",\"sample_value\":11.48,\"path\":[\"components\",\"no2\"]},\"_p_components.o3\":{\"ret_value\":\"number\",\"caption\":\"components o3\",\"sample_value\":32.19,\"path\":[\"components\",\"o3\"]},\"_p_components.so2\":{\"ret_value\":\"number\",\"caption\":\"components so2\",\"sample_value\":3.76,\"path\":[\"components\",\"so2\"]},\"_p_components.pm2_5\":{\"ret_value\":\"number\",\"caption\":\"components pm2_5\",\"sample_value\":23.07,\"path\":[\"components\",\"pm2_5\"]},\"_p_components.pm10\":{\"ret_value\":\"number\",\"caption\":\"components pm10\",\"sample_value\":26.27,\"path\":[\"components\",\"pm10\"]},\"_p_components.nh3\":{\"ret_value\":\"number\",\"caption\":\"components nh3\",\"sample_value\":2.69,\"path\":[\"components\",\"nh3\"]},\"_p_dt\":{\"ret_value\":\"number\",\"caption\":\"dt\",\"sample_value\":1706735954,\"path\":[\"dt\"]}}}}",
+            "url": "http://api.openweathermap.org/data/2.5/air_pollution?lat=[lat]&lon=[lon]&appid=[API key]",
+            "url_params": {
+                "AAp": {
+                    "doc": "Latitude",
+                    "key": "lat",
+                    "private": true,
+                    "value": "47.0105"
+                },
+                "AAq": {
+                    "doc": "Longitude",
+                    "key": "lon",
+                    "private": true,
+                    "value": "28.8638"
+                },
+                "AAr": {
+                    "doc": "Unique API key from OpenWeatherMap.",
+                    "key": "API key",
+                    "private": true,
+                    "value": "a263f7c1f1071221f11c586d84bb6fab"
+                }
+            }
+        },
+        "AAs": {
+            "doc_link": "https://openweathermap.org/api/air-pollution",
+            "initialized": true,
+            "method": "get",
+            "name": "Forecast air pollution data",
+            "publish_as": "data",
+            "rank": 8,
+            "ret_value": "api.1706732293463x609718201301860400.plugin_api.AAs",
+            "should_reinitialize": true,
+            "types": "{\"plugin_api.AAs\":{\"caption\":\"Forecast air pollution data\",\"fields\":{\"_p_coord.lon\":{\"ret_value\":\"number\",\"caption\":\"coord lon\",\"sample_value\":28.8638,\"path\":[\"coord\",\"lon\"]},\"_p_coord.lat\":{\"ret_value\":\"number\",\"caption\":\"coord lat\",\"sample_value\":47.0105,\"path\":[\"coord\",\"lat\"]},\"_p_list\":{\"ret_value\":\"list.api.1706732293463x609718201301860400.plugin_api.AAs.list\",\"caption\":\"list\",\"path\":[\"list\"]}}},\"plugin_api.AAs.list\":{\"caption\":\"Forecast air pollution data list\",\"fields\":{\"_p_main.aqi\":{\"ret_value\":\"number\",\"caption\":\"main aqi\",\"sample_value\":1,\"path\":[\"main\",\"aqi\"]},\"_p_components.co\":{\"ret_value\":\"number\",\"caption\":\"components co\",\"sample_value\":253.68,\"path\":[\"components\",\"co\"]},\"_p_components.no\":{\"ret_value\":\"number\",\"caption\":\"components no\",\"sample_value\":0,\"path\":[\"components\",\"no\"]},\"_p_components.no2\":{\"ret_value\":\"number\",\"caption\":\"components no2\",\"sample_value\":4.41,\"path\":[\"components\",\"no2\"]},\"_p_components.o3\":{\"ret_value\":\"number\",\"caption\":\"components o3\",\"sample_value\":46.49,\"path\":[\"components\",\"o3\"]},\"_p_components.so2\":{\"ret_value\":\"number\",\"caption\":\"components so2\",\"sample_value\":0.62,\"path\":[\"components\",\"so2\"]},\"_p_components.pm2_5\":{\"ret_value\":\"number\",\"caption\":\"components pm2_5\",\"sample_value\":2.22,\"path\":[\"components\",\"pm2_5\"]},\"_p_components.pm10\":{\"ret_value\":\"number\",\"caption\":\"components pm10\",\"sample_value\":3.03,\"path\":[\"components\",\"pm10\"]},\"_p_components.nh3\":{\"ret_value\":\"number\",\"caption\":\"components nh3\",\"sample_value\":0.74,\"path\":[\"components\",\"nh3\"]},\"_p_dt\":{\"ret_value\":\"number\",\"caption\":\"dt\",\"sample_value\":1707422400,\"path\":[\"dt\"]}}}}",
+            "url": "http://api.openweathermap.org/data/2.5/air_pollution/forecast?lat=[lat]&lon=[lon]&appid=[API key]",
+            "url_params": {
+                "AAt": {
+                    "doc": "Latitude",
+                    "key": "lat",
+                    "private": true,
+                    "value": "47.0105"
+                },
+                "AAu": {
+                    "doc": "Longitude",
+                    "key": "lon",
+                    "private": true,
+                    "value": "28.8638"
+                },
+                "AAv": {
+                    "doc": "Unique API key from OpenWeatherMap.",
+                    "key": "API key",
+                    "private": true,
+                    "value": "a263f7c1f1071221f11c586d84bb6fab"
+                }
+            }
+        },
+        "AAx": {
+            "data_type": "image",
+            "initialized": true,
+            "method": "get",
+            "name": "WeatherMap | data",
+            "no_types": true,
+            "publish_as": "data",
+            "rank": 9,
+            "should_reinitialize": true,
+            "url": "https://tile.openweathermap.org/map/[layer]/[z]/[x]/[y].png?appid=[API key]",
+            "url_params": {
+                "AAy": {
+                    "key": "API key",
+                    "private": true,
+                    "value": "a263f7c1f1071221f11c586d84bb6fab"
+                },
+                "AAz": {
+                    "key": "layer",
+                    "private": true,
+                    "value": "clouds_new"
+                },
+                "ABA": {
+                    "key": "z",
+                    "private": true,
+                    "value": "3"
+                },
+                "ABB": {
+                    "key": "x",
+                    "private": true,
+                    "value": "3"
+                },
+                "ABC": {
+                    "key": "y",
+                    "private": true,
+                    "value": "3"
+                }
+            }
+        },
+        "ABd": {
+            "data_type": "image",
+            "doc_link": "https://openweathermap.org/weather-conditions#Icon-list",
+            "initialized": true,
+            "method": "get",
+            "name": "Get Weather Icons | data",
+            "no_types": true,
+            "publish_as": "data",
+            "rank": 10,
+            "should_reinitialize": true,
+            "url": "https://openweathermap.org/img/wn/[icon]@2x.png",
+            "url_params": {
+                "ABf": {
+                    "key": "icon",
+                    "private": true,
+                    "value": "50d"
+                }
+            }
+        },
+        "ABg": {
+            "data_type": "image",
+            "initialized": true,
+            "method": "get",
+            "name": "Get Weather Icons | action",
+            "no_types": true,
+            "publish_as": "action",
+            "rank": 11,
+            "should_reinitialize": true,
+            "url": "https://openweathermap.org/img/wn/[icon]@2x.png",
+            "url_params": {
+                "ABh": {
+                    "key": "icon",
+                    "private": true,
+                    "value": "13n"
+                }
+            }
+        },
+        "ABi": {
+            "initialized": true,
+            "is_list": true,
+            "method": "get",
+            "name": "Get City name by coordinates",
+            "publish_as": "data",
+            "rank": 12,
+            "ret_value": "api.1706732293463x609718201301860400.plugin_api.ABi",
+            "should_reinitialize": true,
+            "types": "{\"plugin_api.ABi\":{\"caption\":\"Get City name by coordinate\",\"fields\":{\"_p_name\":{\"ret_value\":\"text\",\"caption\":\"name\",\"sample_value\":\"Chișinău Municipality\",\"path\":[\"name\"]},\"_p_local_names.ru\":{\"ret_value\":\"text\",\"caption\":\"local_names ru\",\"sample_value\":\"Муниципалитет Кишинёв\",\"path\":[\"local_names\",\"ru\"]},\"_p_local_names.sk\":{\"ret_value\":\"text\",\"caption\":\"local_names sk\",\"sample_value\":\"Kišiňov\",\"path\":[\"local_names\",\"sk\"]},\"_p_local_names.uk\":{\"ret_value\":\"text\",\"caption\":\"local_names uk\",\"sample_value\":\"Муніципій Кишинів\",\"path\":[\"local_names\",\"uk\"]},\"_p_local_names.en\":{\"ret_value\":\"text\",\"caption\":\"local_names en\",\"sample_value\":\"Chișinău Municipality\",\"path\":[\"local_names\",\"en\"]},\"_p_local_names.fr\":{\"ret_value\":\"text\",\"caption\":\"local_names fr\",\"sample_value\":\"Municipalité de Chișinău\",\"path\":[\"local_names\",\"fr\"]},\"_p_local_names.ro\":{\"ret_value\":\"text\",\"caption\":\"local_names ro\",\"sample_value\":\"Municipiul Chișinău\",\"path\":[\"local_names\",\"ro\"]},\"_p_local_names.de\":{\"ret_value\":\"text\",\"caption\":\"local_names de\",\"sample_value\":\"Munizip Kischinau\",\"path\":[\"local_names\",\"de\"]},\"_p_lat\":{\"ret_value\":\"number\",\"caption\":\"lat\",\"sample_value\":47.00740025,\"path\":[\"lat\"]},\"_p_lon\":{\"ret_value\":\"number\",\"caption\":\"lon\",\"sample_value\":28.843146600415984,\"path\":[\"lon\"]},\"_p_country\":{\"ret_value\":\"text\",\"caption\":\"country\",\"sample_value\":\"MD\",\"path\":[\"country\"]}}}}",
+            "url": "http://api.openweathermap.org/geo/1.0/reverse?lat=[lat]&lon=[lon]&limit=[limit]&appid=[API key]",
+            "url_params": {
+                "ABj": {
+                    "key": "lat",
+                    "private": true,
+                    "value": "47.0137"
+                },
+                "ABk": {
+                    "key": "lon",
+                    "private": true,
+                    "value": "28.8357"
+                },
+                "ABl": {
+                    "key": "limit",
+                    "private": true,
+                    "value": "3"
+                },
+                "ABm": {
+                    "key": "API key",
+                    "private": true,
+                    "value": "a263f7c1f1071221f11c586d84bb6fab"
+                }
+            }
+        }
+    },
+    "human": "OpenWeatherMap",
+    "token_param_name": "API key"
+}

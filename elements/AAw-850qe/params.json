@@ -1,0 +1,73 @@
+{
+    "add_is_visible": true,
+    "can_fit_height": true,
+    "category": "visual elements",
+    "default_dim": {
+        "height": 200,
+        "width": 400
+    },
+    "display": "WeatherMap",
+    "events": {
+        "ABH": {
+            "caption": "Marker clicked",
+            "name": "marker_clicked"
+        },
+        "ABI": {
+            "caption": "Marker added",
+            "name": "marker_added"
+        },
+        "ABJ": {
+            "caption": "Route added",
+            "name": "route_added"
+        },
+        "ABK": {
+            "caption": "Marker removed",
+            "name": "marker_removed"
+        },
+        "ABL": {
+            "caption": "Route removed",
+            "name": "route_removed"
+        }
+    },
+    "fields": {
+        "ABD": {
+            "caption": "type_of_markers",
+            "editor": "custom_type",
+            "name": "type_of_markers",
+            "optional": true,
+            "rank": 0
+        },
+        "ABE": {
+            "caption": "Data source",
+            "editor": "DynamicValue",
+            "is_list": true,
+            "name": "data_source",
+            "optional": true,
+            "rank": 1,
+            "value": "custom_data_ABD"
+        },
+        "ABF": {
+            "caption": "Address field",
+            "editor": "custom_field_ABD",
+            "field_type_restriction": "geographic_address",
+            "name": "address_field",
+            "rank": 2
+        }
+    },
+    "icon": "ion-map",
+    "property_applications": {
+        "BoxShadow": true,
+        "MinWidth": true,
+        "resizable": true
+    },
+    "states": {
+        "ABG": {
+            "caption": "Clicked marker",
+            "initialization_code": {
+                "fn": "function(properties, context) {\n\n\n\n}"
+            },
+            "name": "clicked_marker",
+            "value": "custom_data_ABD"
+        }
+    }
+}

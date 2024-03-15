@@ -1,0 +1,41 @@
+{
+    "caption": "Add route",
+    "fields": {
+        "ABV": {
+            "caption": "Type of route",
+            "editor": "custom_type",
+            "name": "type_of_route",
+            "rank": 0
+        },
+        "ABW": {
+            "caption": "Data source",
+            "editor": "DynamicValue",
+            "name": "data_source",
+            "rank": 1,
+            "value": "custom_data_ABV"
+        },
+        "ABX": {
+            "caption": "Start address",
+            "editor": "custom_field_ABV",
+            "field_type_restriction": "geographic_address",
+            "name": "start_address",
+            "rank": 2
+        },
+        "ABY": {
+            "caption": "End address",
+            "editor": "custom_field_ABV",
+            "field_type_restriction": "geographic_address",
+            "name": "end_address",
+            "rank": 3
+        },
+        "ABZ": {
+            "caption": "Waypoints",
+            "editor": "custom_field_ABV",
+            "field_list": true,
+            "field_type_restriction": "geographic_address",
+            "name": "waypoints",
+            "optional": true,
+            "rank": 4
+        }
+    }
+}

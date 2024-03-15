@@ -1,0 +1,39 @@
+{
+    "add_is_visible": true,
+    "category": "visual elements",
+    "default_dim": {
+        "height": 200,
+        "width": 400
+    },
+    "display": "Unix timestamp to date time",
+    "fields": {
+        "ABr": {
+            "caption": "unix_timestamp",
+            "doc": "Unix Timestamp",
+            "editor": "DynamicValue",
+            "name": "unix_timestamp",
+            "rank": 0,
+            "value": "number"
+        }
+    },
+    "icon": "ion-android-globe",
+    "property_applications": {
+        "Background": true,
+        "Border": true,
+        "BoxShadow": true,
+        "Font": true,
+        "MinWidth": true,
+        "Padding": true,
+        "resizable": true
+    },
+    "states": {
+        "ABs": {
+            "caption": "date",
+            "initialization_code": {
+                "fn": "function(properties, context) {\n\n\n\n}"
+            },
+            "name": "date",
+            "value": "date"
+        }
+    }
+}
